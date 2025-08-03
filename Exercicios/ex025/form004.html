@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario</title>
+</head>
+<body>
+    <form method="get" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" minlength="3" maxlength="10" required placeholder="Nome">
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email"autocomplete="email" required placeholder="E-mail">
+        </p>
+        <p>
+            <label for="tell">Telefone:</label>
+            <input type="tel" name="tell" id="tell"autocomplete="tel" required pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}$" placeholder="(99)9999-9999">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
