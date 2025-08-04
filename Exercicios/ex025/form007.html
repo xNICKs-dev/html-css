@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+        <form method="post">
+            <fieldset>
+            <legend>Estados</legend>
+            <p>
+                <label for="Estados">Estados</label>
+                <select name="Estados" id="iest">
+                    <optgroup label="Região Sudeste">
+                        <option value="Sp">São paulo</option>
+                        <option value="Rj">Rio de janeiro</option>
+                        <option value="Mg">Minas gerais</option>
+                    </optgroup>
+                    <optgroup label="Região note">
+                        <option value="Ac">Acre</option>
+                        <option value="Ap">Amapa</option>
+                        <option value="Am">Amazonas</option>
+                    </optgroup>
+                </select></p>
+                <p>
+                    <label for="iprof">Profissões</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option>Professor</option>
+                        <option>Desenvolvedor</option>
+                        <option>Macenico</option>
+                    </datalist>
+                </p>
+                <p><label for="imsg">Mensagens:</label>
+                <textarea name="msg" id="imsg"></textarea>
+                </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            </fieldset>
+        </form>
+
+</body>
+</html>
