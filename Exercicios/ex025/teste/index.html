@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Faça seu cadastro</h1>
+        <p>Esse site é um teste para input's e select's</p>
+        <section>
+            <fieldset>
+                <legend>login</legend>
+                <form method="post">
+                    <p>
+                        <label for="name">Nome: </label>
+                        <input type="text" name="iname" id="name" placeholder="Nome completo">
+                    </p>
+                    <p>
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="iemail" id="email" placeholder="E-mail">
+                    </p>
+                    <p>
+                        <label for="cell">Telefone: </label>
+                        <input type="tel" name="icell" id="cell" placeholder="(99)9999-9999" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$">
+                    </p>
+                    <p>
+                        <label for="senha">Senha: </label>
+                        <input type="password" name="isenha" id="senha" placeholder="password">
+                    </p>
+                    </fieldset>
+                    <fieldset>
+                        <p>
+                            <label for="prof">Estado: </label>
+                            <select name="" id="">
+                                <optgroup label="Região Sudeste">
+                                    <option value="SP">São paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="RJ">Rio De Janeiro</option>
+                                </optgroup>
+                                <optgroup label="Nordeste">
+                                <option value="">Bahia</option>
+                                <option value="">Pernambuco</option>
+                                <option value="">Ceará</option>
+                                </optgroup>
+                                <optgroup label="Sul">
+                                    <option value="">Paraná</option>
+                                    <option value="">Rio Grande do Sul</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="prof">Profissão</label>
+                            <input type="text" name="Profissão" id="prof" list="list">
+                            <datalist id="list">
+                                <option>Professor</option>
+                                <option>Empresario</option>
+                                <option>Motorista</option>
+                                <option>Cozinheiro</option>
+                            </datalist>
+                        </p>
+                        <p>
+                            <label for="alt">sua altura: </label>
+                            <input type="range" name="ialt" id="alt">
+                        </p>
+                        <p>
+                            <label for="img">Deixe uma foto sua aqui</label>
+                            <input type="file" name="iigm" id="img">
+                        </p>
+                        <p>
+                            <input type="radio" name="sx" id="mas">
+                            <label for="mas">Masculino </label>
+                            <input type="radio" name="sx" id="fem">
+                            <label for="fem">Feminino</label>
+                        </p>
+                        <p>
+                            <label for="cor">Sua cor favorita: </label>
+                            <input type="color" name="icor" id="cor">
+                        </p>
+                        <p>
+                            <label for="esp">Esportes que pratica</label>
+                            <input type="checkbox" name="esp" id="fut">
+                            <label for="fut">Futebol</label>
+                            <input type="checkbox" name="esp" id="bas">
+                            <label for="bas">Basquete</label>
+                            <input type="checkbox" name="esp" id="Vol">
+                            <label for="Vol">Volei</label>
+                            <input type="checkbox" name="esp" id="bea">
+                            <label for="bea">Beach Tenis</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                     <p>
+                        <label for="data">Data de envio: </label>
+                        <input type="date" name="idata" id="data">
+                    </p>
+                    <p>
+                        <label for="hora">Horario da realização: </label>
+                        <input type="time" name="ihora" id="hora">
+                    </p>
+                     <p>
+                        <label for="nota">Nota para o site: </label>
+                        <input type="number" name="inota" id="nota" placeholder="0 a 10" max="10" min="0">
+                    </p>
+                    <p>
+                        <label for="coment">Diga como foi sua experiencia: </label><br>
+                        <textarea name="msg" id="coment"></textarea>
+                    </p>
+                     <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
+
+            </fieldset>
+        </section>
+        <section>
+
+        </section>
+    </main>
+</body>
+</html>
