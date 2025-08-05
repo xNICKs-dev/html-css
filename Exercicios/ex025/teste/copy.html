@@ -6,109 +6,121 @@
     <title>Document</title>
 </head>
 <body>
-    <fieldset>
-        <legend>Informações Pessoais</legend>
-        <form action="" method="post">
-        <p>
-            <label for="name">Nome: </label>
-            <input type="text" name="iname" id="name" placeholder="Nome completo" minlength="3" required size="10">
-        </p>
-        <p>
-            <label for="key">Senha: </label>
-            <input type="password" name="ikey" id="key" placeholder="Senha" minlength="7" size="10" required>
-        </p>
-        <p>
-            <label for="email">E-mail: </label>
-            <input type="email" name="imael" id="email" placeholder="E-mail" size="10" required>
-        </p>
-        <p>
-            <label for="cell">Telefone: </label>
-            <input type="tel" name="itel" id="cell" placeholder="9999999999" pattern="^[0-9]{2}[0-9]{4,5}[0-9]{4}$" size="10" required>
-        </p>
-    </fieldset>
-    <fieldset>
-        <legend>Informações Secundarias</legend>
-        <p>
-            <label for="est">Estado que mora: </label>
-            <select name="iest" id="est" size="1" required>
-                <optgroup label="Região Sudeste">
-                <option>São Paulo</option>
-                <option>Rio de Janeiro</option>
-                <option>Mato Grosso</option>
-                </optgroup>
-                <optgroup label="Região Nordeste">
-                <option>Bahia</option>
-                <option>Ceará</option>
-                <option>Pernambuco</option>
-                </optgroup>
-                <optgroup label="Região Sul">
-                <option>Paraná</option>
-                <option>Rio Grande do Sul</option>
-                </optgroup>
-                </select>
-        </p>
-            <p>
-                <label for="prof">Profissão: </label>
-                <input type="text" name="iprof" id="prof" list="list" size="10">
-                <datalist id="list">
-                    <option>Professor</option>
-                    <option>Empresario</option>
-                    <option>Cozinheiro</option>
-                    <option>Desenvolvedor</option>
-                </datalist>
-            </p>
-        <p>
-            <label for="sx">Sexo: </label>
-            <input type="radio" name="sx" id="mas" required>
-            <label for="mas">Masculino</label>
-            <input type="radio" name="sx" id="fem">
-            <label for="fem">Feminino</label>
-        </p>
-        <p>
-            <label for="">Esportes que você pratica: </label>
-            <input type="checkbox" name="esp" id="fut">
-            <label for="fut">Futebol</label>
-            <input type="checkbox" name="esp" id="bas">
-            <label for="bas">Basquete</label>
-            <input type="checkbox" name="esp" id="vol">
-            <label for="vol">Volei</label>
-            <input type="checkbox" name="esp" id="bea">
-            <label for="bea">Beach Tenis</label>
-        </p>
-        <p>
-            <label for="cor">Cor favorita: </label>
-            <input type="color" name="icor" id="cor">
-        </p>
-        <p>
-            <label for="ft">Anexe uma foto sua abaixo</label><br>
-            <input type="file" name="ift" id="ft">
-        </p>
-        <p>
-            <label for="hum">Seu humor: </label>
-            <input type="range" name="ihum" id="hum" >
-        </p>
-    </fieldset>
-    <fieldset>
-        <legend>Avaliação</legend>
-        <p>
-            <label for="data">Data de envio: </label>
-            <input type="date" name="idata" id="data" required >
-        </p>
-        <p>
-            <label for="hr">Horario da realização: </label>
-            <input type="time" name="ihr" id="hr">
-        </p>
-        <p>
-            <label for="nt">Nota para o site: </label>
-            <input type="number" name="int" id="nt" placeholder="0 a 10" min="0" max="10">
-        </p>
-        <p>
-            <label for="coment">Deixe um comentario: </label><br>
-            <textarea name="icomt" id="coment"></textarea>
-        </p>
-    </fieldset>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
-    </form>
+    <main>
+        <section>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <form action="" method="post">
+                <div class="colunss">
+                    <p>
+                        <label for="name">Nome: </label>
+                        <input type="text" name="iname" id="name" placeholder="Nome completo" minlength="3" required size="10">
+                    </p>
+                </div>
+                <div class="coluns">
+                    <p>
+                        <label for="key">Senha: </label>
+                        <input type="password" name="ikey" id="key" placeholder="Senha" minlength="7" size="10" required>
+                    </p>
+                </div>
+                <p>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="imael" id="email" placeholder="E-mail" size="10" required>
+                </p>
+                <p>
+                    <label for="cell">Telefone: </label>
+                    <input type="tel" name="itel" id="cell" placeholder="9999999999" pattern="^[0-9]{2}[0-9]{4,5}[0-9]{4}$" size="10" required>
+                </p>
+            </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Informações Secundarias</legend>
+                    <p>
+                        <label for="est">Estado que mora: </label>
+                        <select name="iest" id="est" size="1" required>
+                            <optgroup label="Região Sudeste">
+                            <option>São Paulo</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Mato Grosso</option>
+                            </optgroup>
+                            <optgroup label="Região Nordeste">
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Pernambuco</option>
+                            </optgroup>
+                            <optgroup label="Região Sul">
+                            <option>Paraná</option>
+                            <option>Rio Grande do Sul</option>
+                            </optgroup>
+                            </select>
+                    </p>
+                        <p>
+                            <label for="prof">Profissão: </label>
+                            <input type="text" name="iprof" id="prof" list="list" size="10">
+                            <datalist id="list">
+                                <option>Professor</option>
+                                <option>Empresario</option>
+                                <option>Cozinheiro</option>
+                                <option>Desenvolvedor</option>
+                            </datalist>
+                        </p>
+                    <p>
+                        <label for="sx">Sexo: </label>
+                        <input type="radio" name="sx" id="mas" required>
+                        <label for="mas">Masculino</label>
+                        <input type="radio" name="sx" id="fem">
+                        <label for="fem">Feminino</label>
+                    </p>
+                    <p>
+                        <label for="">Esportes que você pratica: </label>
+                        <input type="checkbox" name="esp" id="fut">
+                        <label for="fut">Futebol</label>
+                        <input type="checkbox" name="esp" id="bas">
+                        <label for="bas">Basquete</label>
+                        <input type="checkbox" name="esp" id="vol">
+                        <label for="vol">Volei</label>
+                        <input type="checkbox" name="esp" id="bea">
+                        <label for="bea">Beach Tenis</label>
+                    </p>
+                    <p>
+                        <label for="cor">Cor favorita: </label>
+                        <input type="color" name="icor" id="cor">
+                    </p>
+                    <p>
+                        <label for="ft">Anexe uma foto sua abaixo</label><br>
+                        <input type="file" name="ift" id="ft">
+                    </p>
+                    <p>
+                        <label for="hum">Seu humor: </label>
+                        <input type="range" name="ihum" id="hum" >
+                    </p>
+                </fieldset>
+            </section>
+            <section>
+            <fieldset>
+                <legend>Avaliação</legend>
+                <p>
+                    <label for="data">Data de envio: </label>
+                    <input type="date" name="idata" id="data" required >
+                </p>
+                <p>
+                    <label for="hr">Horario da realização: </label>
+                    <input type="time" name="ihr" id="hr">
+                </p>
+                <p>
+                    <label for="nt">Nota para o site: </label>
+                    <input type="number" name="int" id="nt" placeholder="0 a 10" min="0" max="10">
+                </p>
+                <p>
+                    <label for="coment">Deixe um comentario: </label><br>
+                    <textarea name="icomt" id="coment"></textarea>
+                </p>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            </form>
+        </section>
+    </main>
 </body>
 </html>
