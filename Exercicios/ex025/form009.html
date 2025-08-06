@@ -6,9 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+    <form action="">
+        <label for="num1">Numero 1: </label>
+        <input type="range" name="1num" id="num1" min="0" max="10" value="5" oninput="ival.innerHTML = Number(num1.value)">
+        <output id="ival">5</output>
+        <p>
+        
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
