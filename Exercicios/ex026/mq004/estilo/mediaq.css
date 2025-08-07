@@ -1,7 +1,56 @@
 /* todas as demais midias */
 @media print{
-
+    #cel{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+    body{
+    background: black url('../imagens/back-print.jpg')no-repeat center center / cover;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid black;
+    }
+    h1{
+    text-shadow: none;
+    color: black;
+    }
 }
-@media screen and () {
-    
+/* Tablet */
+@media screen and (min-width: 768px) {
+    #tb{
+        display: block;
+    }
+    #cel{
+        display: none;
+    }
+    body{
+        background: black url('../imagens/back-tablet.jpg')no-repeat center center / cover;
+    }
+}
+/* Desktop */
+@media screen and (min-width: 1280px) {
+    #pc{
+        display: block;
+    }
+    #tb{
+        display: none;
+    }
+    body{
+        background: black url('../imagens/back-pc.jpg')no-repeat center center / cover;
+    }
+}
+/* Tv (grandes telas) */
+@media screen and (min-width: 1920px) {
+    #pc{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+    body{
+        background: black url('../imagens/back-tv.jpg')no-repeat center center / cover;
+    }
 }
