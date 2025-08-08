@@ -24,7 +24,7 @@ span#menu{
 }
 span#menu:hover{
     background-color: white;
-    color:black
+    color:black;
 }
 menu{
     display: none;
