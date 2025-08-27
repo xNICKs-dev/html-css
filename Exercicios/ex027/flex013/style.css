@@ -13,24 +13,42 @@
         }
         header.container{
             background-color: darkgray;
-            display: flex;
+            color: white;
             padding: 10px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
         }
         header h1{
-            color: white;
             border: 1px dotted black;
-            text-align: initial;
-            align-content: center;
+
             text-shadow: 2px 1px 3px black;
+            flex: 0 0 200px;
+        
         }
         nav{
             border: 1px dotted black;
+            justify-content: end;
+            flex-flow: row wrap;
+            display: flex;
         }
-        a{
-            border-radius: 3px;
+        header nav a{
+            border-radius: 5px;
             background-color: black;
             color: white;
             text-decoration: none;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            
+  
+        }
+        header nav a:hover{
+            background-color: white;
+            color: black;
+            transition: background-color .5s;
         }
         main{
             background-color: white;
